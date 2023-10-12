@@ -1,38 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int sumTwo(int a, int b)
+int square( int a)
 {
-    int c= a+b;
-    return c;
+    return(a*a);
 }
 
-int square(int n)
+int main()
 {
-    return n*n;
-}
-
-int get_max(int x, int y)
-{
-    if(x > y)
-    return x;
-    
-    return y;
-    
-}
-
-
-int main(int argc, char*argv[])
-{
-    int a, b;
-    a=3;
-    b=10;
-    printf("sumTwo result : %i\n", sumTwo(a,b));
-    
-    printf("sumTwo result : %i\n", square(a) );
-    
-    printf("get result : %i\n", get_max(a,b) );
-   
+    int a=2;
+    a = square(a);
+    printf("a=%i\n",a);
+     
   system("PAUSE");	
   return 0;
 }
